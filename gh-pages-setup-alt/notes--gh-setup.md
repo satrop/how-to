@@ -2,7 +2,7 @@
 
 This is the simplest method I've found, and use, to set up Vite React app, initialize GitHub, set up a repo to receive the React app and, using GitHub workflow build and push to gh-pages.
 
-###Notes
+### Notes
 
 -   All terminal command are run in VSCodes built in terminal
 
@@ -53,7 +53,7 @@ npm run dev
 base: '/project-name/',
 ```
 
-###Example:
+### Example:
 
 ```js
 import { defineConfig } from 'vite';
@@ -71,7 +71,7 @@ export default defineConfig({
 "homepage": "/project-name/",
 ```
 
-###Example:
+### Example:
 
 ```js
 {
@@ -106,7 +106,7 @@ git add . && git commit -m "Init push"
 
 15. Follow the "<b>…or push an existing repository from the command line</b>" instructions. Copy the instruction <b>from GitHub</b> because it will auto populate "your-account-name" and "project-name" and past that into your VSCodes terminal.
 
-###Example:
+### Example:
 
 ```sh
 git remote add origin https://github.com/{your-account-name}/{project-name}.git {<-- Change "your-account-name" and "project-name" }
