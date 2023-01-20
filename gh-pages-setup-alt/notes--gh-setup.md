@@ -220,7 +220,8 @@ git push
 
 Now every time you make a change, `git push` and the GitHub workflow will build the project and push to you gh-pages.
 
-<!--
+---
+
 ## Setup A Multiple Page React App
 
 Do all the steps above plus:
@@ -237,33 +238,37 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
 	return (
 		<HashRouter>
+			<Nav />
 			<Routes>
-				<Route path="/" exact element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="/destination" element={<Destination />} />
-					<Route path="/crew" element={<Crew />} />
-					<Route path="/technology" element={<Technology />} />
-				</Route>
+				<Route index element={<Home />} />
+				<Route path="/page1" element={<Page1 />} />
+				<Route path="/page2" element={<Page2 />} />
+				<Route path="/page3" element={<Page3 />} />
+				<Route path="/page4" element={<Page4 />} />
 			</Routes>
 		</HashRouter>
 	);
 }
 ```
 
-3. In your navigation component, import Outlet and NavLinks
+1. In your navigation component, import `Nav` or `NavLinks`. `NavLinks` will help add an active class to the current page in the navigation.
 
 ```jsx
-import { Outlet, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 ```
 
-4. Build you navigation using the `/page-name`
+1. Build you navigation as you see fit...
 
 ```jsx
 <ul>
 	<li>
-		<NavLink to="/page-name">Page Name</NavLink>
+		<NavLink to="/">Home</NavLink>
+		<NavLink to="/page1">Page 1</NavLink>
+		<NavLink to="/page2">Page 2</NavLink>
+		<NavLink to="/page3">Page 3</NavLink>
+		<NavLink to="/page4">Page 4</NavLink>
 	</li>
 </ul>
 ```
 
---- -->
+---
