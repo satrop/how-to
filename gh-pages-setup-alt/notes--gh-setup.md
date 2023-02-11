@@ -58,6 +58,9 @@ npm run dev
 9. Open the `vite.config.js` in your projects root and add:
 
 ```js
+css: {
+	devSourcemap: true,
+},
 base: '/project-name/',
 ```
 
