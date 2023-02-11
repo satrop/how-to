@@ -26,6 +26,7 @@ npm create vite@latest
 ```sh
 npm i
 ```
+
 <br>
 <div style='padding: 2rem; background-color:#E9D8FD; color:#69337A'>
 
@@ -42,6 +43,7 @@ npm i sass
 ```sh
 npm i react-router-dom@6
 ```
+
 </div>
 <br>
 
@@ -67,11 +69,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
 	plugins: [react()],
+	css: {
+		devSourcemap: true,
+	},
 	base: '/project-name/', // <-- Change the 'project-name' to your project name
 });
 ```
 
-10. Open the `package.json` file and add:
+1.  Open the `package.json` file and add:
 
 ```js
 "homepage": "/project-name/",
@@ -269,9 +274,17 @@ import { NavLink } from 'react-router-dom';
 <ul>
 	<li>
 		<NavLink to="/">Home</NavLink>
+	</li>
+	<li>
 		<NavLink to="/page1">Page 1</NavLink>
+	</li>
+	<li>
 		<NavLink to="/page2">Page 2</NavLink>
+	</li>
+	<li>
 		<NavLink to="/page3">Page 3</NavLink>
+	</li>
+	<li>
 		<NavLink to="/page4">Page 4</NavLink>
 	</li>
 </ul>
