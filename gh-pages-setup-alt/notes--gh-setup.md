@@ -196,7 +196,7 @@ to:
 
 At this point the work flow will go do its thing and after ~30 seconds it should be complete. In the root of you GitHub repo you should see a green check mark in the header. It'll one of three thing, the green check mark indicating that all is working as it should, and orange dot indicating that the build is in process or a red dot that indicate that the build failed. Should you get the red dot you can click on the dot and then Details in the pop up and take it from there. At this point you'll want to reach out to mother Google for help.
 
-23. Now got to Settings > Pages and in the <b>Branch</b> section click on the dropdown that says "none" and select "gh-pages" as the branch. Then hit save.
+23. Now go to Settings > Pages and in the <b>Branch</b> section click on the dropdown that says "none" and select "gh-pages" as the branch. Then hit save.
 
 <p align="center">
 <img src='images/8.png'/>
